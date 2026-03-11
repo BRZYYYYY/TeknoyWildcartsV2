@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TEKNOY WILDCARTS - Act 6</title>
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.png" alt="Logo" class="header-logo">
+        <h1 class="header-title">TEKNOY WILDCARTS</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="loadPage('home.html')">Home</a>
+        <a href="javascript:void(0)" onclick="loadPage('products.html')">Products</a>
+        <a href="javascript:void(0)" onclick="loadPage('about.html')">About</a>
+    </div>
+
+    <!-- Main Content with backdrop container -->
+    <div class="backdrop-container">
+        <div class="main">
+            <iframe name="mainframe" id="mainframe" src="home.html" width="100%" height="100%" style="border: none; border-radius: 24px;"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Teknoy Wildcarts. All rights reserved.</p>
+    </div>
+
+    <script>
+        function loadPage(page) {
+            document.getElementById('mainframe').src = page;
+        }
+    </script>
+</body>
+</html>
